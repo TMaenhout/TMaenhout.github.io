@@ -1,0 +1,226 @@
+body{
+    background-image: linear-gradient(rgba(20, 32, 23), rgba(52, 62, 34));
+    background-attachment: fixed;
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(28, 28, 28);
+}
+
+ul{
+    color: white;
+    list-style: none;
+    float: right;
+    padding-right: 35%;
+}
+
+li{
+    display: inline;
+    border-right: 4px white solid;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 28px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: rgb(145, 171, 96);
+}
+
+li img{
+    border-right: none;
+}
+
+li:hover{
+    color: rgb(52, 62, 34, 1.0);
+}
+.dropbtn {
+  background-color: rgba(28, 28, 28, 0);
+  color: white;
+  border: none;
+  font-size: 26px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(28, 28, 28);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover{
+    color: rgb(145, 171, 96);
+}
+
+.dropdown-content a:hover{
+    color: rgb(145, 171, 96);
+}
+
+figure{
+    margin-top: 5%;
+    margin-right: 10px;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    margin-top: 12%;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin-left: 48%;
+    margin-top: 5%;
+}
+
+h3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    max-width: 40%;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+#left{
+    position: absolute;
+    margin-top: 30%;
+}
+
+#right{
+    position: absolute;
+    float: right;
+    margin-top: 30%;
+    margin-left: 97%;
+}
+
+footer{
+    height: 90px;
+    background-color: rgb(28, 28, 28);
+    position:absolute;
+    top: 170%;
+    bottom:0;
+    width:100%;
+    left: 0;
+}
+.socials{
+    color: white;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+}
+footer img{
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.sponsor{
+    width: auto;
+    height: 40px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.adres{
+    float: right;
+    color: white;
+    margin-right: 15px;
+    position: relative;
+    top: 30px;
+}
+
+.adres:hover{
+    color: rgb(44, 44, 255);
+    text-decoration: underline;
+}
+
+footer img:hover{
+    scale: 103%;
+}
+@media (max-width: 1024px){
+    ul {
+        display: none;
+      }
+     .hamburger-menu {
+        display: block;
+      }
+     .hamburger-menu ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgb(28, 28, 28);
+        padding: 1px;
+        padding-right: 10px;
+      }
+     .hamburger-menu li {
+        display: block;
+        margin-bottom: 10px;
+      }
+     .hamburger-menu a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      ul a{
+        font-size: 12px;
+      }
+      .dropbtn{
+        font-size: 12px;
+      }
+      #img{
+        width: 100%;
+        height: 100%;
+      }
+      footer{
+        top: 115%;
+      }
+}
+
+@media (max-width: 600px){
+
+    ul a{
+        font-size: 10px;
+      }
+      .dropbtn{
+        font-size: 10px;
+      }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Angkor&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/stijl-exi2.css">
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<title></title>
+</head>
+<body>
+	<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script>
+    var slideIndex = 0;
+    var slides = document.getElementsByClassName("mySlides");
+    var timer; // variabele om de timer bij te houden
+
+    showSlides();
+
+    function showSlides() {
+        var i;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        timer = setTimeout(showSlides, 2000); // verander 2000 naar de gewenste tijd in milliseconden (hier 2 seconden)
+    }
+
+    function plusSlides(n) {
+        clearTimeout(timer); // stop de automatische wisseling wanneer de gebruiker op de knoppen klikt
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        clearTimeout(timer); // stop de automatische wisseling wanneer de gebruiker op de knoppen klikt
+        showSlides(slideIndex = n);
+    }
+</script>
+	<header>
+		<nav>
+			<img src="img/logo.png" width="321px" height="97px">
+			<br>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><div class="dropdown">
+				  <button class="dropbtn">Tentoonstellingen</button>
+				  <div class="dropdown-content">
+				    <a href="exi1.html">Garden</a>
+				    <a href="exi2.html">Islands</a>
+				    <a href="exi3.html">Earth Today</a>
+					<a href="exi4.html">Planet-Life</a>
+				  </div>
+				</div></li>
+				<li><a href="geschiedenis.html">Geschiedenis</a></li>
+				<li><a href="info.html">Info</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1>Island Of Science</h1>
+    <a id="left" href="exi1.html"><img src="img/triL.png" width="22px" height="26px"></a>
+    <a id="right" href="exi3.html"><img src="img/triR.png" width="22px" height="26px"></a>
+    <article class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/IOS1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="img/IOS2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="img/IOS3.jpg" style="width:100%">
+        </div>
+		<div class="mySlides fade">
+            <img src="img/IOS4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="img/IOS5.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="img/IOS6.jpg" style="width:100%">
+        </div>
+		<div class="mySlides fade">
+            <img src="img/IOS7.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="img/IOS8.jpg" style="width:100%">
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </article>
+    <br>
+      
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+	<h2>
+        About
+    </h2>
+    <h3>
+		Deze tentoonstelling bestaat uit meerdere gelinkte ruimtes die boordevol staan met fosielen, skeleten en opgezette dieren van over de hele wereld en van elk tijdperk. In totaal zijn er meer dan 32.000 verschillende elementen te vinden die boordevol informatie en historie zitten klaar om elk persoon jong of oud te entertainen. bij elk element is er een bordje met uitleg over wat het is    </h3>
+    <footer>
+		<a class="socials">Socials:</a>
+		<br>
+		<a href="https://www.facebook.com/museuciencies">
+			<img src="img/fb.png"alt="Facebook">
+		</a>
+		<a href="https://twitter.com/museuciencies">
+			<img src="img/twitter.png" alt="Twitter">
+		</a>
+		<a href="https://www.instagram.com/museuciencies/">
+			<img src="img/ig.png" alt="Instagram">
+		</a>
+		<img class="sponsor" src="img/sponsor1.png" alt="Sponsor1">
+		<img class="sponsor" src="img/sponsor2.png" alt="Sponsor2">
+		<a class="adres">Plaza Leonardo Da Vinci, 4-5</a>
+	</footer>
+</body>
+</html>

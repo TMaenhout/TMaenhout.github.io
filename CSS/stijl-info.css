@@ -1,0 +1,260 @@
+body{
+    background-image: linear-gradient(rgba(20, 32, 23), rgba(52, 62, 34));
+    background-attachment: fixed;
+}
+
+header{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(28, 28, 28);
+}
+
+ul{
+    color: white;
+    list-style: none;
+    float: right;
+    padding-right: 35%;
+}
+
+li{
+  display: inline;
+  border-right: 4px white solid;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 28px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+  color: rgb(145, 171, 96);
+}
+
+li img{
+    border-right: none;
+}
+
+li:hover{
+    color: rgb(52, 62, 34, 1.0);
+}
+.dropbtn {
+  background-color: rgba(28, 28, 28, 0);
+  color: white;
+  border: none;
+  font-size: 26px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(28, 28, 28);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover{
+  color: rgb(145, 171, 96);
+}
+
+.dropdown-content a:hover{
+  color: rgb(145, 171, 96);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 700px;
+    margin-top: 10%;
+    margin-left: 4%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  label:hover {
+    color: darkblue;
+    cursor: pointer;
+  }
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 250%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #f2f4f6;
+  color: #5a5a5a;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#bericht{
+  height: 200px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4d90fe;
+}
+
+.button-group {
+  text-align: right;
+  padding-top: 20px;
+}
+
+#verzend {
+  position: absolute;
+  top: 66%;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #5cb85c;
+  color: white;
+}
+
+#verzend:hover {
+  background-color: #4cae4c;
+  transform: scale(1.1);
+  color: #ffffff;
+}
+
+.map{
+  position: absolute;
+  top: 22%;
+  left: 55%;
+}
+footer{
+    height: 90px;
+    background-color: rgb(28, 28, 28);
+    position:absolute;
+    top: 91%;
+    bottom:0;
+    width:100%;
+    left: 0;
+}
+.socials{
+    color: white;
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+}
+footer img{
+    width: auto;
+    height: 40px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.sponsor{
+    width: auto;
+    height: 40px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.adres{
+    float: right;
+    color: white;
+    margin-right: 15px;
+    position: relative;
+    top: 30px;
+}
+
+.adres:hover{
+  color: rgb(44, 44, 255);
+  text-decoration: underline;
+}
+
+footer img:hover{
+  scale: 103%;
+}
+
+@media (max-width: 1024px) {
+  ul{
+    padding-right: 20%;
+  }
+  .container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    margin-top: 30%;
+  }
+  #invoice, #email, #bericht{
+    margin-left: 5%;
+    max-width: 400%;
+  }
+  #verzend{
+    top: 91%;
+  }
+  .map{
+    margin-top: 70%;
+    max-width: 150%;
+  }
+  footer{
+    top: 150%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
+    margin-top: 30%;
+  }
+  #invoice, #email, #bericht{
+    margin-left: 5%;
+    max-width: 180%;
+  }
+  #verzend{
+    top: 76%;
+  }
+  .map{
+    margin-top: 70%;
+    padding-top: 100px;
+    max-width: 75%;
+  }
+}
